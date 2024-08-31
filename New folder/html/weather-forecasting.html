@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting - Agriculture Website</title>
+    <link rel="stylesheet" href="/New folder/css/weather-forecasting.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Weather Forecasting</h1>
+            <p>Stay ahead of the weather with our advanced forecasting service. Get accurate, localized weather predictions to plan your farming activities effectively.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Enter Your Location</h2>
+            <form action="submit-forecast.html" method="POST">
+                <label for="location">Geographical Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter your location" required>
+
+                <label for="forecast-type">Forecast Type:</label>
+                <select id="forecast-type" name="forecast-type" required>
+                    <option value="daily">Daily Forecast</option>
+                    <option value="weekly">Weekly Forecast</option>
+                    <option value="monthly">Monthly Forecast</option>
+                </select>
+
+                <input type="submit" value="Get Forecast" class="submit-button">
+            </form>
+        </section>
+
+        <section class="forecast-info">
+            <h2>Why Accurate Weather Data Matters</h2>
+            <p>Timely and precise weather information can significantly impact your farming decisions. Whether it’s preparing for an approaching storm or deciding the best time to irrigate, having accurate data helps you minimize risks and maximize productivity.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Green Fields. All rights reserved.</p>
+    </footer>
+</body>
+</html>

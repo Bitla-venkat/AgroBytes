@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommendation - Agriculture Website</title>
+    <link rel="stylesheet" href="/New folder/css/fertilizer-recommendation.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Fertilizer Recommendation</h1>
+            <p>Provide your soil nutrient details to receive customized fertilizer recommendations that will help optimize crop growth and minimize environmental impact.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Enter Your Details</h2>
+            <form action="submit-fertilizer.html" method="POST">
+                <label for="soil-nitrogen">Soil Nitrogen Level (N):</label>
+                <input type="number" id="soil-nitrogen" name="soil-nitrogen" min="0" max="100" required>
+
+                <label for="soil-phosphorus">Soil Phosphorus Level (P):</label>
+                <input type="number" id="soil-phosphorus" name="soil-phosphorus" min="0" max="100" required>
+
+                <label for="soil-potassium">Soil Potassium Level (K):</label>
+                <input type="number" id="soil-potassium" name="soil-potassium" min="0" max="100" required>
+
+                <label for="crop-type">Crop Type:</label>
+                <input type="text" id="crop-type" name="crop-type" placeholder="Enter the crop you are growing" required>
+
+                <label for="location">Geographical Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter your location" required>
+
+                <input type="submit" value="Get Recommendations" class="submit-button">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Green Fields. All rights reserved.</p>
+    </footer>
+</body>
+</html>
