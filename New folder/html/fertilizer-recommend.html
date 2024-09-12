@@ -35,11 +35,40 @@
                 <label for="soil-potassium">Soil Potassium Level (K):</label>
                 <input type="number" id="soil-potassium" name="soil-potassium" min="0" max="100" required>
 
-                <label for="crop-type">Crop Type:</label>
-                <input type="text" id="crop-type" name="crop-type" placeholder="Enter the crop you are growing" required>
+                
+                <label for="Moisture">Moisture</label>
+                <input type="number" id="soil-potassium" name="soil-potassium" min="0" max="100" required>
+                
+                <label for="soil-potassium">Temperature</label>
+                <input type="number" id="soil-potassium" name="soil-potassium" min="0" max="100" required>
+                
+                <label for="soil-potassium">Humidity</label>
+                <input type="number" id="soil-potassium" name="soil-potassium" min="0" max="100" required>
+                
+                <label for="Crop-Type">Crop Type:</label>
+                <select id="soil-type" name="soil-type" required>
+                    <option value="Maize">Maize</option>
+                    <option value="Sugarcane">Sugarcane</option>
+                    <option value="cotton">cotton</option>
+                    <option value="Tobacco">Tobacco</option>
+                    <option value="Paddy">Paddy</option>
+                    <option value="Barley">Barley</option>
+                    <option value="wheat">wheat</option>
+                    <option value="Millets">Millets</option>
+                    <option value="Oil seeds">Oil seeds</option>
+                    <option value="Pulses">Pulses</option>
+                    <option value="Ground Nuts">Ground Nuts</option>
+                </select>
+            
+                <label for="soil-type">Soil Type:</label>
+                <select id="soil-type" name="soil-type" required>
+                    <option value="loamy">Loamy</option>
+                    <option value="clayey">Clayey</option>
+                    <option value="sandy">Sandy</option>
+                    <option value="Black">Black</option>
+                    <option value="Red">Red</option>
+                </select>
 
-                <label for="location">Geographical Location:</label>
-                <input type="text" id="location" name="location" placeholder="Enter your location" required>
 
                 <input type="submit" value="Get Recommendations" class="submit-button">
             </form>

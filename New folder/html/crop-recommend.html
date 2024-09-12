@@ -26,31 +26,28 @@
         <section class="form-section">
             <h2>Enter Your Details</h2>
             <form action="submit-recommendation.html" method="POST">
-                <label for="soil-type">Soil Type:</label>
-                <select id="soil-type" name="soil-type" required>
-                    <option value="loamy">Loamy</option>
-                    <option value="clayey">Clayey</option>
-                    <option value="sandy">Sandy</option>
-                    <option value="silty">Silty</option>
-                </select>
+               
 
-                <label for="ph-level">Soil pH Level:</label>
-                <input type="number" id="ph-level" name="ph-level" min="0" max="14" step="0.1" required>
+                <label for="soil-nitrogen">Soil Nitrogen Level (N):</label>
+                <input type="number" id="soil-nitrogen" name="soil-nitrogen" min="0" max="100" required>
 
-                <label for="climate">Climate:</label>
-                <select id="climate" name="climate" required>
-                    <option value="temperate">Temperate</option>
-                    <option value="tropical">Tropical</option>
-                    <option value="arid">Arid</option>
-                    <option value="semi-arid">Semi-Arid</option>
-                    <option value="humid">Humid</option>
-                </select>
+                <label for="soil-phosphorus">Soil Phosphorus Level (P):</label>
+                <input type="number" id="soil-phosphorus" name="soil-phosphorus" min="0" max="100" required>
 
-                <label for="location">Geographical Location:</label>
-                <input type="text" id="location" name="location" placeholder="Enter your location" required>
+                <label for="soil-potassium">Soil Potassium Level (K):</label>
+                <input type="number" id="soil-potassium" name="soil-potassium" min="0" max="100" required>
+                
+                <label for="Moisture">Moisture</label>
+                <input type="number" id="soil-potassium" name="soil-potassium" min="0" max="100" required>
+                
+                <label for="soil-potassium">Temperature</label>
+                <input type="number" id="soil-potassium" name="soil-potassium" min="0" max="100" required>
+                
+                <label for="soil-potassium">Rainfall</label>
+                <input type="number" id="soil-potassium" name="soil-potassium" min="0" max="100" required>
 
-                <label for="crop-history">Previous Crop History (if any):</label>
-                <textarea id="crop-history" name="crop-history" rows="4" placeholder="Describe the crops grown previously"></textarea>
+                <label for="soil-potassium">PH</label>
+                <input type="number" id="soil-potassium" name="soil-potassium" min="0" max="100" required>
 
                 <input type="submit" value="Get Recommendations" class="submit-button">
             </form>
